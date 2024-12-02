@@ -119,28 +119,6 @@ class AstrologerResource extends Resource
                             ->required(),
                         Forms\Components\Textarea::make('rejection_reason'),
                     ]),
-
-//                Forms\Components\Section::make('Status & Verification')
-//                    ->schema([
-//                        Forms\Components\Toggle::make('is_verified')
-//                            ->label('Verified Status')
-//                            ->onColor('success')
-//                            ->offColor('danger')
-//                            ->required(),
-//                        Forms\Components\Select::make('account_status')
-//                            ->label('Account Status')
-//                            ->options([
-//                                'pending' => 'Pending',
-//                                'active' => 'Active',
-//                                'suspended' => 'Suspended',
-//                                'blocked' => 'Blocked',
-//                            ])
-//                            ->required(),
-//                        Forms\Components\Textarea::make('rejection_reason')
-//                            ->label('Reason for Status Change')
-//                            ->placeholder('Provide details if changing account status or verification')
-//                            ->visibleOn('edit'), // Only show this field when editing
-//                    ]),
             ]);
     }
     public static function mutateFormDataBeforeCreate($data): array
